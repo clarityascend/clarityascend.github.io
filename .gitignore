@@ -1,0 +1,14 @@
+# Bundler
+.bundle
+vendor
+Gemfile.lock
+
+# Jekyll
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_site
+
+# Misc
+.DS_Store
+node_modules

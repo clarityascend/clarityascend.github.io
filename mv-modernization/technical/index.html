@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MultiValue Modernization — Technical edition</title>
+<meta name="description" content="Modernize UniVerse and UniData without rewriting: MVBU for Chrome and VS Code, MVBA code analyser.">
+<link rel="icon" href="../../assets/img/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#12110E}
+a{color:#FFC61A}a:hover{color:#FFE08A}
+</style>
+<style>html{scroll-behavior:smooth}*{box-sizing:border-box}</style>
+</head>
+<body>
+<div style="background: #12110E; color: #EDE9E0; font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #2A2720">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px">
+<svg width="36" height="36" viewBox="0 0 128 128" aria-hidden="true"><defs><clipPath id="tA"><path d="M28,54 A36,11 0 0 0 100,54 V75 A36,11 0 0 1 28,75 Z"></path></clipPath><clipPath id="tB"><path d="M28,75 A36,11 0 0 0 100,75 V97 A36,11 0 0 1 28,97 Z"></path></clipPath><clipPath id="tC"><path d="M28,32 V96 A36,11 0 0 0 100,96 V32 A36,11 0 0 0 28,32 Z"></path><ellipse cx="64" cy="32" rx="36" ry="11"></ellipse></clipPath></defs><rect width="128" height="128" rx="28" fill="#FFC61A"></rect><g clip-path="url(#tC)"><path d="M28,32 V96 A36,11 0 0 0 100,96 V32 A36,11 0 0 0 28,32 Z" fill="#1D1A14"></path><ellipse cx="64" cy="32" rx="36" ry="11" fill="#1D1A14"></ellipse><g clip-path="url(#tA)" fill="#FFC61A"><rect x="49.75" y="54" width="4.5" height="34"></rect><rect x="73.75" y="54" width="4.5" height="34"></rect></g><g clip-path="url(#tB)" fill="#FFC61A"><rect x="40.15" y="75" width="4.5" height="35"></rect><rect x="54.55" y="75" width="4.5" height="35"></rect><rect x="68.95" y="75" width="4.5" height="35"></rect><rect x="83.35" y="75" width="4.5" height="35"></rect></g><g fill="none" stroke="#FFC61A" stroke-width="4.5"><path d="M28,32 A36,11 0 0 0 100,32"></path><path d="M28,54 A36,11 0 0 0 100,54"></path><path d="M28,75 A36,11 0 0 0 100,75"></path></g></g></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px; color: #FFFFFF">MultiValue Modernization</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 15px">
+<a href="#tools" style="color: #D6D1C6; text-decoration: none">Tools</a>
+<a href="#architecture" style="color: #D6D1C6; text-decoration: none">Architecture</a>
+<a href="#path" style="color: #D6D1C6; text-decoration: none">Roadmap</a>
+<a href="../../" style="color: inherit; text-decoration: none; opacity: 0.85">Blog</a>
+<a href="../learn/" style="color: #D6D1C6; text-decoration: none">New to MultiValue?</a>
+<a href="#get" style="background: #FFC61A; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 10px 18px; border-radius: 8px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Add MVBU to Chrome</a>
+</div>
+</nav>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 80px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="margin: 0 0 16px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #FFC61A; letter-spacing: 0.04em">ROCKET UNIVERSE · UNIDATA · PICK-STYLE SYSTEMS</p>
+<h1 style="margin: 0 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 700; color: #FFFFFF">Modernize MultiValue without rewriting it.</h1>
+<p style="margin: 0 0 32px; font-size: 20px; color: #C9C3B6; max-width: 560px">Your UniVerse and UniData systems already run the business. Keep them where they are, and give developers and analysts modern tools around them: full-width output, structured API calls, readable schema and code insight.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<a href="#get" style="background: #FFC61A; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 14px 24px; border-radius: 8px">Get MVBU for Chrome &amp; Edge</a>
+<a href="#mvba" style="border: 1px solid #4A463C; color: #FFFFFF; font-weight: 500; text-decoration: none; padding: 13px 24px; border-radius: 8px">MVBA for VS Code</a>
+</div>
+</div>
+<div style="flex: 1 1 480px; min-width: 0; background: #1C1A16; border: 1px solid #2E2B24; border-radius: 14px; overflow: hidden; font-family: 'JetBrains Mono', monospace; font-size: 13.5px">
+<div style="display: flex; gap: 8px; padding: 12px 16px; border-bottom: 1px solid #2E2B24; align-items: center">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #4A463C"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #4A463C"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #4A463C"></span>
+<span style="margin-left: 10px; color: #A8A193">MVBU · DEV · Developer console</span>
+</div>
+<div style="padding: 20px 22px; color: #D6D1C6; white-space: pre; overflow-x: auto; line-height: 1.7"><span style="color: #FFC61A">&gt;</span> TERM 132,999
+<span style="color: #FFC61A">&gt;</span> LIST CUSTOMERS NAME CITY BALANCE BY CITY
+
+<span style="color: #A8A193">CUSTOMERS.. NAME................ CITY.......... BALANCE...</span>
+[ID]        [NAME]               [CITY]         [AMOUNT]
+[ID]        [NAME]               [CITY]         [AMOUNT]
+[ID]        [NAME]               [CITY]         [AMOUNT]
+
+<span style="color: #7FD1A8">✓ saved</span> mvbu-output/2026-11-09/0942_LIST.md</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #2A2720; border-bottom: 1px solid #2A2720; background: #17150F">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px">
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 36px; color: #FFFFFF">The 24 × 80 problem</h2>
+<p style="margin: 0 0 40px; color: #C9C3B6; max-width: 720px">The data model is not the bottleneck. The tooling around it is: green-screen terminals, wrapped reports, and code that only a few people still understand.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 300px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; color: #FFC61A; font-size: 14px">01 · OUTPUT</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Reports that wrap and scroll away</h3>
+<p style="margin: 0; color: #B8B2A5">LIST and SORT output squeezed into 80 columns, lost when the session ends.</p>
+</div>
+<div style="flex: 1 1 300px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; color: #FFC61A; font-size: 14px">02 · INTEGRATION</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Subroutines without a test bench</h3>
+<p style="margin: 0; color: #B8B2A5">Calling a catalogued subroutine with an XML request means writing a throwaway program first.</p>
+</div>
+<div style="flex: 1 1 300px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 8px; font-family: 'JetBrains Mono', monospace; color: #FFC61A; font-size: 14px">03 · KNOWLEDGE</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Decades of BASIC, little documentation</h3>
+<p style="margin: 0; color: #B8B2A5">Before anything changes, teams need to see what the code reads, writes and calls.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="tools" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #FFC61A">THE TOOLKIT</p>
+<h2 style="margin: 0 0 48px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #FFFFFF">Two tools. See the data, then understand the code.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+
+<article id="get" style="flex: 1 1 520px; min-width: 0; background: #1C1A16; border: 1px solid #3A362C; border-radius: 16px; padding: 36px">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px">
+<span style="background: #FFC61A; color: #1D1A14; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 13px; padding: 4px 10px; border-radius: 6px">MVBU</span>
+<span style="color: #A8A193; font-size: 14px">Chrome · Edge · VS Code</span>
+</div>
+<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; color: #FFFFFF">MultiValue Basic Utility</h3>
+<p style="margin: 0 0 24px; color: #C9C3B6">Run commands, call APIs and read file schema at full width in a browser tab. MVBU views data and never edits records.</p>
+<ul style="margin: 0 0 28px; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; color: #D6D1C6">
+<li><strong style="color: #FFFFFF">Developer console</strong> — TCL/ECL at <code style="font-family: 'JetBrains Mono', monospace; color: #FFC61A">TERM 132,999</code>, history, favourites, select lists kept between commands.</li>
+<li><strong style="color: #FFFFFF">API calls</strong> — call catalogued subroutines with IN / OUT / IN-OUT arguments; XML sent as typed; dynamic arrays broken down by field, value and sub-value.</li>
+<li><strong style="color: #FFFFFF">Analyst view</strong> — look up a record, find records step by step, see what's in a file. Plain language, no field numbers.</li>
+<li><strong style="color: #FFFFFF">File schema</strong> — dictionary, layout and record views in one click.</li>
+<li><strong style="color: #FFFFFF">Markdown output</strong> — every run saved, downloadable as .md or .zip.</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa" style="background: #FFC61A; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 12px 20px; border-radius: 8px">Add to Chrome</a>
+<a href="#architecture" style="border: 1px solid #4A463C; color: #FFFFFF; text-decoration: none; padding: 11px 20px; border-radius: 8px">How it connects</a>
+</div>
+</article>
+
+<article id="mvba" style="flex: 1 1 520px; min-width: 0; background: #1C1A16; border: 1px solid #3A362C; border-radius: 16px; padding: 36px">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px">
+<span style="background: #8FB8FF; color: #0E1A33; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 13px; padding: 4px 10px; border-radius: 6px">MVBA</span>
+<span style="color: #A8A193; font-size: 14px">VS Code extension</span>
+</div>
+<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; color: #FFFFFF">MultiValue Basic Analyser</h3>
+<p style="margin: 0 0 28px; color: #C9C3B6">Generate documentation reports for Rocket UniVerse BASIC programs, including the internal call tree with Mermaid or Markmap diagrams, file usage, metrics and warnings.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://marketplace.visualstudio.com/items?itemName=LXie.multivalue-basic-analyser" style="background: #8FB8FF; color: #0E1A33; font-weight: 600; text-decoration: none; padding: 12px 20px; border-radius: 8px">Install from VS Code Marketplace</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="architecture" style="background: #17150F; border-top: 1px solid #2A2720; border-bottom: 1px solid #2A2720">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #FFC61A">UNDER THE HOOD</p>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #FFFFFF">Nothing installed on the database server.</h2>
+<p style="margin: 0 0 48px; color: #C9C3B6; max-width: 760px">A browser can't open a UniRPC connection, so MVBU pairs the extension with a small Python helper on your own computer. It uses Rocket uopy and talks to the extension over Chrome native messaging.</p>
+<div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 14px">
+<div style="flex: 1 1 200px; background: #1F1C16; border: 1px solid #FFC61A; border-radius: 12px; padding: 20px">
+<p style="margin: 0 0 6px; color: #FFC61A">BROWSER</p>
+<p style="margin: 0; color: #FFFFFF; font-family: Inter, sans-serif; font-weight: 600">MVBU extension</p>
+<p style="margin: 6px 0 0; color: #A8A193">Manifest V3 · Analyst view · Console</p>
+</div>
+<div style="flex: 0 1 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #A8A193; text-align: center">
+<span aria-hidden="true" style="font-size: 22px; color: #FFC61A">⟶</span>
+<span>native messaging</span>
+</div>
+<div style="flex: 1 1 200px; background: #1F1C16; border: 1px solid #3A362C; border-radius: 12px; padding: 20px">
+<p style="margin: 0 0 6px; color: #FFC61A">YOUR COMPUTER</p>
+<p style="margin: 0; color: #FFFFFF; font-family: Inter, sans-serif; font-weight: 600">MVBU helper</p>
+<p style="margin: 6px 0 0; color: #A8A193">Python 3.8+ · Rocket uopy</p>
+</div>
+<div style="flex: 0 1 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #A8A193; text-align: center">
+<span aria-hidden="true" style="font-size: 22px; color: #FFC61A">⟶</span>
+<span>UniRPC · SSL · 31438</span>
+</div>
+<div style="flex: 1 1 200px; background: #1F1C16; border: 1px solid #3A362C; border-radius: 12px; padding: 20px">
+<p style="margin: 0 0 6px; color: #FFC61A">SERVER</p>
+<p style="margin: 0; color: #FFFFFF; font-family: Inter, sans-serif; font-weight: 600">UniVerse / UniData</p>
+<p style="margin: 6px 0 0; color: #A8A193">Linux · uvcs / udcs</p>
+</div>
+</div>
+
+<div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 520px; min-width: 0">
+<h3 style="margin: 0 0 16px; font-size: 22px; color: #FFFFFF">Dynamic arrays, finally readable</h3>
+<p style="margin: 0 0 20px; color: #B8B2A5">Type <code style="font-family: 'JetBrains Mono', monospace; color: #FFC61A">^</code> for @FM, <code style="font-family: 'JetBrains Mono', monospace; color: #FFC61A">]</code> for @VM and <code style="font-family: 'JetBrains Mono', monospace; color: #FFC61A">\</code> for @SM. Results come back broken down and labelled from the dictionary you pick.</p>
+<div style="background: #12110E; border: 1px solid #2E2B24; border-radius: 10px; padding: 18px 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #D6D1C6; overflow-x: auto; white-space: pre">Rec.Out = <span style="color: #FFC61A">[NAME]^[PHONE 1]][PHONE 2]^[TAG A]\[TAG B]</span></div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; overflow-x: auto">
+<table style="width: 100%; border-collapse: collapse; font-size: 15px">
+<thead><tr style="text-align: left; color: #A8A193; font-family: 'JetBrains Mono', monospace; font-size: 13px"><th style="padding: 10px 12px; border-bottom: 1px solid #3A362C">FIELD</th><th style="padding: 10px 12px; border-bottom: 1px solid #3A362C">VALUE</th><th style="padding: 10px 12px; border-bottom: 1px solid #3A362C">SUB</th><th style="padding: 10px 12px; border-bottom: 1px solid #3A362C">LABEL · DATA</th></tr></thead>
+<tbody style="color: #D6D1C6">
+<tr><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">NAME · [NAME]</td></tr>
+<tr><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">2</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">PHONE · [PHONE 1]</td></tr>
+<tr><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">2</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">2</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">PHONE · [PHONE 2]</td></tr>
+<tr><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">3</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">1–2</td><td style="padding: 10px 12px; border-bottom: 1px solid #2A2720">TAGS · [TAG A], [TAG B]</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 32px">
+<h2 style="margin: 0 0 40px; font-family: 'Space Grotesk', sans-serif; font-size: 36px; color: #FFFFFF">Built for production accounts</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 260px; border-top: 2px solid #FFC61A; padding-top: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px; color: #FFFFFF">Allowed-commands guard</h3>
+<p style="margin: 0; color: #B8B2A5">Only LIST, SORT, SELECT, CT, COUNT and friends run by default. Everything else is blocked or needs confirmation.</p>
+</div>
+<div style="flex: 1 1 260px; border-top: 2px solid #FFC61A; padding-top: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px; color: #FFFFFF">Confirm on PROD</h3>
+<p style="margin: 0; color: #B8B2A5">Per-profile confirmation before commands, API calls and compiles.</p>
+</div>
+<div style="flex: 1 1 260px; border-top: 2px solid #FFC61A; padding-top: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px; color: #FFFFFF">Secrets stay local</h3>
+<p style="margin: 0; color: #B8B2A5">Passwords in macOS Keychain, Windows Credential Manager or Python keyring. SSL required.</p>
+</div>
+<div style="flex: 1 1 260px; border-top: 2px solid #FFC61A; padding-top: 20px">
+<h3 style="margin: 0 0 8px; font-size: 18px; color: #FFFFFF">Licence-friendly sessions</h3>
+<p style="margin: 0; color: #B8B2A5">Idle sessions disconnect after 10 minutes by default, releasing the licence.</p>
+</div>
+</div>
+</section>
+
+<section id="path" style="background: #17150F; border-top: 1px solid #2A2720">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #FFC61A">A MODERNIZATION PATH</p>
+<h2 style="margin: 0 0 48px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #FFFFFF">Modernize in steps, not in one big bang.</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 20px">
+<li style="flex: 1 1 260px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 44px; color: #FFC61A; line-height: 1">1</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">See</h3>
+<p style="margin: 0; color: #B8B2A5">Put data, schema and API results in front of the whole team with MVBU.</p>
+</li>
+<li style="flex: 1 1 260px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 44px; color: #FFC61A; line-height: 1">2</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Understand</h3>
+<p style="margin: 0; color: #B8B2A5">Map programs, calls and file usage with MVBA before touching anything.</p>
+</li>
+<li style="flex: 1 1 260px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 44px; color: #FFC61A; line-height: 1">3</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Expose</h3>
+<p style="margin: 0; color: #B8B2A5">Turn well-understood subroutines into documented APIs other systems can call.</p>
+</li>
+<li style="flex: 1 1 260px; background: #1F1C16; border: 1px solid #2E2B24; border-radius: 12px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 44px; color: #FFC61A; line-height: 1">4</p>
+<h3 style="margin: 0 0 8px; font-size: 20px; color: #FFFFFF">Evolve</h3>
+<p style="margin: 0; color: #B8B2A5">Refactor or replace the parts that matter, with evidence of what depends on them.</p>
+</li>
+</ol>
+
+<div style="margin-top: 80px; background: #FFC61A; color: #1D1A14; border-radius: 18px; padding: 48px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 480px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px">Try it on sample data first.</h2>
+<p style="margin: 0; font-size: 18px">MVBU's mock mode replays recorded responses, so you can explore without a server connection.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa" style="background: #1D1A14; color: #FFFFFF; font-weight: 600; text-decoration: none; padding: 14px 24px; border-radius: 8px">Add MVBU to Chrome</a>
+<a href="https://clarityascend.com/MVBU" style="border: 2px solid #1D1A14; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 12px 22px; border-radius: 8px">Talk to us</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #2A2720">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; color: #A8A193; font-size: 14px">
+<span>© 2026 Clarity Ascend · MVBU and MVBA</span>
+<span>UniVerse and UniData are products of Rocket Software.</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

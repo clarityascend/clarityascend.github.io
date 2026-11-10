@@ -1,0 +1,1443 @@
+{
+  "title": "MultiValue database family tree",
+  "note": "Transcribed from the MultiValue history chart (1965 to today). Branches: TRW, PICK, REALITY, PI. Before diverging, Pick R77 ≈ REALITY 3.x ≈ PI 1.0. derived_from / leads_to follow the chart's arrows (IP ownership or source code).",
+  "count": 125,
+  "entries": [
+    {
+      "name": "IBM (hardware)",
+      "description": "IBM hardware on which TRW built the original GIRLS/GIM system in 1965.",
+      "branch": "TRW",
+      "era": "1965",
+      "type": "hardware",
+      "leads_to": [
+        "GIRLS → GIM"
+      ]
+    },
+    {
+      "name": "GIRLS → GIM",
+      "company": "TRW",
+      "description": "The first system in the MultiValue family tree, built by TRW in 1965 on IBM hardware. GIRLS was later renamed GIM; GIM-I, GIM-II, RIS and ITDS all derive from it.",
+      "branch": "TRW",
+      "era": "1965",
+      "type": "coded from scratch",
+      "derived_from": [
+        "IBM (hardware)"
+      ],
+      "leads_to": [
+        "GIM-I",
+        "GIM-II",
+        "RIS",
+        "ITDS",
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "GIM-II",
+      "company": "TRW",
+      "description": "TRW's GIM-II, derived from GIM and run for the CIA on DEC PDP-11 hardware.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "GIRLS → GIM"
+      ],
+      "leads_to": [
+        "CIA"
+      ]
+    },
+    {
+      "name": "CIA",
+      "description": "User of GIM-II on PDP-11 hardware.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "company owning IP",
+      "derived_from": [
+        "GIM-II"
+      ]
+    },
+    {
+      "name": "PDP-11 (hardware)",
+      "description": "DEC PDP-11 minicomputer that ran GIM-II for the CIA.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "hardware"
+    },
+    {
+      "name": "GIM-I",
+      "company": "TRW",
+      "description": "TRW's GIM-I, derived from GIM and run for NASA on Univac hardware.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "GIRLS → GIM"
+      ],
+      "leads_to": [
+        "NASA"
+      ]
+    },
+    {
+      "name": "NASA",
+      "description": "User of GIM-I on Univac hardware.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "company owning IP",
+      "derived_from": [
+        "GIM-I"
+      ]
+    },
+    {
+      "name": "Univac (hardware)",
+      "description": "Univac hardware that ran GIM-I for NASA.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "hardware"
+    },
+    {
+      "name": "RIS",
+      "company": "General Analytics",
+      "description": "Product of General Analytics, derived from TRW's GIM; feeds into Pick & Associates' ACCESS/DM512.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "GIRLS → GIM"
+      ],
+      "leads_to": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "ITDS",
+      "company": "US Army",
+      "description": "US Army system derived from TRW's GIM.",
+      "branch": "TRW",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "GIRLS → GIM"
+      ]
+    },
+    {
+      "name": "Xerox Sigma 7 (hardware)",
+      "description": "Xerox Sigma 7 hardware on which Pick & Associates built ACCESS / DM512.",
+      "branch": "PICK",
+      "era": "1970s",
+      "type": "hardware",
+      "leads_to": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "ACCESS, DM512",
+      "company": "Pick & Associates",
+      "description": "Early Pick system from Pick & Associates on Xerox Sigma 7, influenced by TRW's GIM; the start of the Pick branch.",
+      "branch": "PICK",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "GIRLS → GIM",
+        "RIS"
+      ],
+      "leads_to": [
+        "Pick Systems R77/R80/R81",
+        "Multi-6",
+        "Ports of Pick"
+      ]
+    },
+    {
+      "name": "Multi-6",
+      "description": "Pick derivative that took source code from Pick & Associates.",
+      "branch": "PICK",
+      "era": "1970s",
+      "type": "product",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Pick Systems R77 / R80 / R81",
+      "company": "Pick Systems",
+      "description": "Pick Systems' releases R77, R80 and R81. Before the branches diverged, Pick R77 was roughly equivalent to REALITY 3.x and PI 1.0.",
+      "branch": "PICK",
+      "era": "1970s–1980s",
+      "type": "product",
+      "derived_from": [
+        "ACCESS, DM512"
+      ],
+      "leads_to": [
+        "Evolution",
+        "Omnus → ICC",
+        "Pick Systems R83 … AP PRO"
+      ]
+    },
+    {
+      "name": "Evolution",
+      "description": "Pick derivative from the R77 era of Pick Systems.",
+      "branch": "PICK",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R77 / R80 / R81"
+      ]
+    },
+    {
+      "name": "Omnus → ICC",
+      "description": "Pick derivative from Pick Systems, Omnus later became ICC.",
+      "branch": "PICK",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R77 / R80 / R81"
+      ]
+    },
+    {
+      "name": "Pick Systems R83 / R84 / OA / Adv Pick / AP PRO",
+      "company": "Pick Systems",
+      "description": "Pick Systems' 1980s–90s releases: R83, R84, Open Architecture (OA), Advanced Pick and AP PRO.",
+      "branch": "PICK",
+      "era": "1980s–1990s",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R77 / R80 / R81"
+      ],
+      "leads_to": [
+        "Pick AT",
+        "Pick Blue",
+        "D3"
+      ]
+    },
+    {
+      "name": "Pick AT",
+      "description": "Pick version for PC AT-class machines, from Pick Systems' R83 line.",
+      "branch": "PICK",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R83 / R84 / OA / Adv Pick / AP PRO"
+      ]
+    },
+    {
+      "name": "Pick Blue",
+      "description": "Pick version from the Pick Systems R84 line (see also the Seattle Labs Pick Blue port for IBM RT/RS6000).",
+      "branch": "PICK",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R83 / R84 / OA / Adv Pick / AP PRO"
+      ]
+    },
+    {
+      "name": "D3",
+      "company": "Pick Systems → PickAX → Raining Data → TigerLogic → Rocket",
+      "description": "Pick Systems' D3 (1990s). Its IP passed to PickAX, then Raining Data → TigerLogic; today D3 is a Rocket product.",
+      "branch": "PICK",
+      "era": "1990s–today",
+      "type": "product",
+      "derived_from": [
+        "Pick Systems R83 / R84 / OA / Adv Pick / AP PRO"
+      ],
+      "leads_to": [
+        "PickAX",
+        "Raining Data → TigerLogic"
+      ]
+    },
+    {
+      "name": "PickAX",
+      "description": "Company that took over Pick Systems' IP; passed to Raining Data → TigerLogic.",
+      "branch": "PICK",
+      "era": "1990s",
+      "type": "company owning IP",
+      "derived_from": [
+        "D3"
+      ],
+      "leads_to": [
+        "Raining Data → TigerLogic"
+      ]
+    },
+    {
+      "name": "Datamedia",
+      "description": "Port of Pick: a licensed implementation of Pick for Datamedia hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Xmark",
+      "description": "Port of Pick: a licensed implementation of Pick for Xmark hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Altos → Acer",
+      "description": "Port of Pick: a licensed implementation of Pick for Altos hardware (later Acer).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "C.Itoh (CIE) → GA",
+      "description": "Port of Pick: a licensed implementation of Pick for C.Itoh (CIE) hardware (later GA).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "CDI IBM Series/1",
+      "description": "Port of Pick: a licensed implementation of Pick for CDI IBM Series/1 hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "WICAT",
+      "description": "Port of Pick: a licensed implementation of Pick for WICAT hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Fujitsu → Alpha Micro",
+      "description": "Port of Pick: a licensed implementation of Pick for Fujitsu hardware (later Alpha Micro).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Fujitsu España",
+      "description": "Port of Pick: a licensed implementation of Pick for Fujitsu España hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Tau/Nippon",
+      "description": "Port of Pick: a licensed implementation of Pick for Tau/Nippon hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Pick Vulture",
+      "description": "Port of Pick: a licensed implementation of Pick for Pick Vulture hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "MDC Eagle board",
+      "description": "Port of Pick: a licensed implementation of Pick for MDC Eagle board hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "DEC VAX & MicroVAX",
+      "description": "Port of Pick: a licensed implementation of Pick for DEC VAX & MicroVAX hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "SMI IBM 370, 4300, 9370",
+      "description": "Port of Pick: a licensed implementation of Pick for SMI IBM 370, 4300, 9370 hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Sanyo/ICON AT&T & BSD UNIX",
+      "description": "Port of Pick: a licensed implementation of Pick for Sanyo/ICON AT&T & BSD UNIX hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Upboard",
+      "description": "Port of Pick: a licensed implementation of Pick for Upboard hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Pertec Sabre → Scan-Optics",
+      "description": "Port of Pick: a licensed implementation of Pick for Pertec Sabre hardware (later Scan-Optics).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "ICL Clan → STC",
+      "description": "Port of Pick: a licensed implementation of Pick for ICL Clan hardware (later STC).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Archford Excalibur",
+      "description": "Port of Pick: a licensed implementation of Pick for Archford Excalibur hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "IBC",
+      "description": "Port of Pick: a licensed implementation of Pick for IBC hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Electronique Serge Dassault",
+      "description": "Port of Pick: a licensed implementation of Pick for Electronique Serge Dassault hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Seattle OS → Seattle Labs Pick Blue IBM RT/RS6000",
+      "description": "Port of Pick: a licensed implementation of Pick for Seattle OS hardware (later Seattle Labs Pick Blue IBM RT/RS6000).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Pinnacle",
+      "description": "Port of Pick: a licensed implementation of Pick for Pinnacle hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Toltec → Edge → Edgcore → Arix",
+      "description": "Port of Pick: a licensed implementation of Pick for Toltec hardware (later Edge, Edgcore, Arix).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Rexon Summit → Alpha Micro Pick 64+ → Sequoia → GA",
+      "description": "Port of Pick: a licensed implementation of Pick for Rexon Summit hardware (later Alpha Micro Pick 64+, Sequoia, GA).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Aston Crystal Excel",
+      "description": "Port of Pick: a licensed implementation of Pick for Aston Crystal Excel hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Pyramid → Siemens",
+      "description": "Port of Pick: a licensed implementation of Pick for Pyramid hardware (later Siemens).",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "DS-Rabbit",
+      "description": "Port of Pick: a licensed implementation of Pick for DS-Rabbit hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Data General",
+      "description": "Port of Pick: a licensed implementation of Pick for Data General hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Encore",
+      "description": "Port of Pick: a licensed implementation of Pick for Encore hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Climax Sunshine",
+      "description": "Port of Pick: a licensed implementation of Pick for Climax Sunshine hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Stratus",
+      "description": "Port of Pick: a licensed implementation of Pick for Stratus hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "XEROX Brazil",
+      "description": "Port of Pick: a licensed implementation of Pick for XEROX Brazil hardware.",
+      "branch": "PICK",
+      "era": "1970s–1990s",
+      "type": "port of Pick",
+      "derived_from": [
+        "ACCESS, DM512"
+      ]
+    },
+    {
+      "name": "Zebra",
+      "company": "General Automation",
+      "description": "General Automation's Pick implementation (Other SMA Pick).",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1980s",
+      "type": "product",
+      "leads_to": [
+        "R91",
+        "Power 95",
+        "General Automation (2000s)"
+      ]
+    },
+    {
+      "name": "R91",
+      "company": "General Automation",
+      "description": "General Automation Pick release, successor to Zebra.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "Zebra"
+      ]
+    },
+    {
+      "name": "Power 95",
+      "company": "General Automation",
+      "description": "General Automation Pick release, successor to Zebra.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "Zebra"
+      ]
+    },
+    {
+      "name": "SequoiaPICK",
+      "company": "COST → Sequoia",
+      "description": "Pick implementation from COST → Sequoia; led to mvEnterprise.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1980s",
+      "type": "product",
+      "leads_to": [
+        "mvEnterprise"
+      ]
+    },
+    {
+      "name": "mvEnterprise",
+      "description": "Successor to SequoiaPICK; IP later passed to General Automation.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "SequoiaPICK"
+      ],
+      "leads_to": [
+        "mv.PRO",
+        "General Automation (2000s)"
+      ]
+    },
+    {
+      "name": "mv.PRO",
+      "description": "Product derived from mvEnterprise; IP later passed to General Automation.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "mvEnterprise"
+      ],
+      "leads_to": [
+        "General Automation (2000s)"
+      ]
+    },
+    {
+      "name": "Mentor",
+      "company": "ADDS",
+      "description": "ADDS' Pick implementation, later owned by NCR ADDS → AT&T.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1980s",
+      "type": "product",
+      "leads_to": [
+        "M-PC/OS",
+        "MentorPRO",
+        "mv.BASE"
+      ]
+    },
+    {
+      "name": "M-PC/OS",
+      "company": "NCR ADDS → ATT",
+      "description": "PC version of Mentor from NCR ADDS → AT&T.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "Mentor"
+      ],
+      "leads_to": [
+        "M-O/E"
+      ]
+    },
+    {
+      "name": "MentorPRO",
+      "company": "NCR ADDS → ATT",
+      "description": "Successor to Mentor from NCR ADDS → AT&T.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "Mentor"
+      ]
+    },
+    {
+      "name": "M-O/E",
+      "description": "Successor to M-PC/OS.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "M-PC/OS"
+      ]
+    },
+    {
+      "name": "mv.BASE",
+      "description": "Derived from Mentor/mvEnterprise; IP passed to General Automation, then Raining Data → TigerLogic. Today mvBase is a Rocket product.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s–today",
+      "type": "product",
+      "derived_from": [
+        "Mentor",
+        "mvEnterprise"
+      ],
+      "leads_to": [
+        "General Automation (2000s)",
+        "mvBase"
+      ]
+    },
+    {
+      "name": "UniVision",
+      "company": "EDP → Kerridge",
+      "description": "Pick-style database coded from scratch by EDP → Kerridge.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "coded from scratch"
+    },
+    {
+      "name": "General Automation (2000s)",
+      "description": "General Automation in the 1990s–2000s, owning Zebra, mvEnterprise, mv.PRO and mv.BASE IP; passed to Raining Data → TigerLogic.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s–2000s",
+      "type": "company owning IP",
+      "derived_from": [
+        "R91",
+        "Power 95",
+        "mvEnterprise",
+        "mv.PRO",
+        "mv.BASE"
+      ],
+      "leads_to": [
+        "Raining Data → TigerLogic"
+      ]
+    },
+    {
+      "name": "Honeywell (hardware)",
+      "description": "Honeywell hardware for which The Ultimate Corp. built its Pick implementation.",
+      "branch": "PICK",
+      "era": "1970s–1980s",
+      "type": "hardware",
+      "leads_to": [
+        "Ultimate"
+      ]
+    },
+    {
+      "name": "Ultimate",
+      "company": "Ultimate",
+      "description": "The Ultimate Corp.'s Pick implementation on Honeywell hardware; led to Ultplus.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1980s",
+      "type": "product",
+      "leads_to": [
+        "Ultplus"
+      ]
+    },
+    {
+      "name": "Ultplus",
+      "description": "Successor to Ultimate; IP passed to OSS → Nextech.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "Ultimate"
+      ],
+      "leads_to": [
+        "OSS → Nextech"
+      ]
+    },
+    {
+      "name": "OSS → Nextech",
+      "description": "Company that took over Ultplus IP.",
+      "branch": "PICK (Other SMA Pick)",
+      "era": "1990s",
+      "type": "company owning IP",
+      "derived_from": [
+        "Ultplus"
+      ]
+    },
+    {
+      "name": "Intertechnique (hardware)",
+      "description": "Intertechnique hardware on which Réalité ran.",
+      "branch": "PICK / REALITY",
+      "era": "1970s",
+      "type": "hardware",
+      "leads_to": [
+        "Réalité"
+      ]
+    },
+    {
+      "name": "Réalité",
+      "company": "Intertechnique",
+      "description": "Intertechnique's French Pick implementation; led to IN2, then Siemens Nixdorf.",
+      "branch": "PICK / REALITY",
+      "era": "1970s–1980s",
+      "type": "product",
+      "leads_to": [
+        "IN2",
+        "Nixdorf"
+      ]
+    },
+    {
+      "name": "IN2",
+      "description": "Successor to Intertechnique's Réalité; IP passed to Siemens Nixdorf.",
+      "branch": "PICK",
+      "era": "1980s",
+      "type": "company owning IP",
+      "derived_from": [
+        "Réalité"
+      ],
+      "leads_to": [
+        "Nixdorf"
+      ]
+    },
+    {
+      "name": "Nixdorf",
+      "company": "Siemens",
+      "description": "Siemens Nixdorf Pick implementation, from IN2.",
+      "branch": "PICK",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "IN2"
+      ]
+    },
+    {
+      "name": "Microdata (hardware)",
+      "description": "Microdata hardware on which Reality was built.",
+      "branch": "REALITY",
+      "era": "1970s",
+      "type": "hardware",
+      "leads_to": [
+        "Reality (Microdata)"
+      ]
+    },
+    {
+      "name": "Reality (Microdata)",
+      "company": "Microdata",
+      "description": "Microdata's Reality, the start of the REALITY branch. Reality 3.x was roughly equivalent to Pick R77 and PI 1.0.",
+      "branch": "REALITY",
+      "era": "1970s",
+      "type": "product",
+      "leads_to": [
+        "Reality 3.x … REALITY/X",
+        "M9000/Sequel/Sequoia",
+        "(PC)microReality"
+      ]
+    },
+    {
+      "name": "Reality 3.x … 5.x … 7.x … REALITY/X",
+      "company": "Microdata → CMC → McDonnell Douglas → MDISI → MDIS",
+      "description": "Reality releases as ownership moved Microdata → CMC → McDonnell Douglas Corporation → McDonnell Douglas Computer Systems Company → MDISI → MDIS; later Northgate Information Solutions.",
+      "branch": "REALITY",
+      "era": "1980s–1990s",
+      "type": "product",
+      "derived_from": [
+        "Reality (Microdata)"
+      ],
+      "leads_to": [
+        "Northgate Information Solutions"
+      ]
+    },
+    {
+      "name": "(PC)microReality",
+      "description": "PC version of Reality.",
+      "branch": "REALITY",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Reality (Microdata)"
+      ]
+    },
+    {
+      "name": "M9000/Sequel/Sequoia",
+      "description": "Reality derivative (M9000, Sequel, Sequoia); led to Pegasus and Spirit.",
+      "branch": "REALITY",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Reality (Microdata)"
+      ],
+      "leads_to": [
+        "Pegasus",
+        "Spirit"
+      ]
+    },
+    {
+      "name": "Pegasus",
+      "description": "Product derived from M9000/Sequel/Sequoia.",
+      "branch": "REALITY",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "M9000/Sequel/Sequoia"
+      ]
+    },
+    {
+      "name": "Spirit",
+      "description": "Product derived from M9000/Sequel/Sequoia.",
+      "branch": "REALITY",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "M9000/Sequel/Sequoia"
+      ]
+    },
+    {
+      "name": "JAC",
+      "description": "Company that started jBASE; led to jBASE Software.",
+      "branch": "REALITY",
+      "era": "1990s",
+      "type": "company owning IP",
+      "leads_to": [
+        "jBASE"
+      ]
+    },
+    {
+      "name": "jBASE",
+      "company": "jBASE Software → Temenos → Zumasys",
+      "description": "MultiValue database coded from scratch by jBASE Software; passed to Temenos (jBASE → TAFC) and Temenos → jBASE Int'l / Mpower1. Today jBASE is a Zumasys product.",
+      "branch": "REALITY",
+      "era": "1990s–today",
+      "type": "coded from scratch",
+      "derived_from": [
+        "JAC"
+      ],
+      "leads_to": [
+        "jBASE → TAFC",
+        "Temenos → jBASE Int'l / Mpower1"
+      ]
+    },
+    {
+      "name": "jBASE → TAFC",
+      "company": "Temenos",
+      "description": "Temenos' version of jBASE, renamed TAFC; led to TAFJ.",
+      "branch": "REALITY",
+      "era": "2000s",
+      "type": "product",
+      "derived_from": [
+        "jBASE"
+      ],
+      "leads_to": [
+        "TAFJ"
+      ]
+    },
+    {
+      "name": "TAFJ",
+      "company": "Temenos",
+      "description": "Temenos product coded from scratch, successor to TAFC.",
+      "branch": "REALITY",
+      "era": "2000s–today",
+      "type": "coded from scratch",
+      "derived_from": [
+        "jBASE → TAFC"
+      ]
+    },
+    {
+      "name": "Caché",
+      "company": "InterSystems",
+      "description": "InterSystems' database, coded from scratch, shown alongside the MultiValue family.",
+      "branch": "REALITY",
+      "era": "1990s–2000s",
+      "type": "coded from scratch"
+    },
+    {
+      "name": "Reality (ADP)",
+      "company": "ADP",
+      "description": "ADP's Reality; IP later passed to ADP → CDK (CoRA).",
+      "branch": "REALITY",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Reality (Microdata)"
+      ],
+      "leads_to": [
+        "CoRA"
+      ]
+    },
+    {
+      "name": "CoRA",
+      "company": "ADP → CDK",
+      "description": "ADP → CDK product derived from ADP's Reality and jBASE.",
+      "branch": "REALITY",
+      "era": "2000s",
+      "type": "product",
+      "derived_from": [
+        "Reality (ADP)",
+        "jBASE"
+      ]
+    },
+    {
+      "name": "Devcom",
+      "description": "Company in the REALITY/PI area, linked to the PI branch.",
+      "branch": "REALITY / PI",
+      "era": "1980s",
+      "type": "company owning IP"
+    },
+    {
+      "name": "VAR Consortium",
+      "description": "Group of value-added resellers linking the REALITY and PI branches.",
+      "branch": "REALITY / PI",
+      "era": "1980s",
+      "type": "company owning IP"
+    },
+    {
+      "name": "PRIME (hardware)",
+      "description": "Prime Computer hardware on which PRIME INFORMATION was built.",
+      "branch": "PI",
+      "era": "1970s",
+      "type": "hardware",
+      "leads_to": [
+        "Information"
+      ]
+    },
+    {
+      "name": "Information",
+      "company": "Prime",
+      "description": "PRIME INFORMATION, coded from scratch by Prime: the start of the PI branch. PI 1.0 was roughly equivalent to Pick R77 and Reality 3.x.",
+      "branch": "PI",
+      "era": "1970s",
+      "type": "coded from scratch",
+      "leads_to": [
+        "PI/Open",
+        "ComputerVision",
+        "UPIX",
+        "uniVerse",
+        "UniData"
+      ]
+    },
+    {
+      "name": "PI/Open",
+      "description": "Prime's open-systems successor to PRIME INFORMATION.",
+      "branch": "PI",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Information"
+      ],
+      "leads_to": [
+        "ComputerVision"
+      ]
+    },
+    {
+      "name": "ComputerVision",
+      "description": "Company that took over Prime's PI IP.",
+      "branch": "PI",
+      "era": "1990s",
+      "type": "company owning IP",
+      "derived_from": [
+        "Information",
+        "PI/Open"
+      ]
+    },
+    {
+      "name": "Revelation (COSMOS)",
+      "company": "COSMOS",
+      "description": "COSMOS' Revelation, coded from scratch; led to Revelation's RevG and Arev, and today's OpenInsight.",
+      "branch": "PI",
+      "era": "1980s",
+      "type": "coded from scratch",
+      "leads_to": [
+        "RevG",
+        "Arev",
+        "OpenInsight"
+      ]
+    },
+    {
+      "name": "RevG",
+      "company": "Revelation",
+      "description": "Revelation product (Revelation G), successor to COSMOS' Revelation.",
+      "branch": "PI",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "Revelation (COSMOS)"
+      ],
+      "leads_to": [
+        "Arev",
+        "PI/PC"
+      ]
+    },
+    {
+      "name": "Arev",
+      "description": "Advanced Revelation, successor to RevG; led to OpenInsight.",
+      "branch": "PI",
+      "era": "1980s–1990s",
+      "type": "product",
+      "derived_from": [
+        "RevG"
+      ],
+      "leads_to": [
+        "OpenInsight"
+      ]
+    },
+    {
+      "name": "PI/PC",
+      "description": "PC version of PRIME INFORMATION, linked to RevG.",
+      "branch": "PI",
+      "era": "1980s",
+      "type": "product",
+      "derived_from": [
+        "RevG"
+      ]
+    },
+    {
+      "name": "OpenQM",
+      "company": "Ladybridge → Zumasys",
+      "description": "MultiValue database coded from scratch by Ladybridge; led to ScarletDME. Today OpenQM is a Zumasys product.",
+      "branch": "PI",
+      "era": "2000s–today",
+      "type": "coded from scratch",
+      "leads_to": [
+        "ScarletDME",
+        "Ladybridge (2000s)"
+      ]
+    },
+    {
+      "name": "ScarletDME",
+      "description": "Open-source MultiValue database derived from OpenQM.",
+      "branch": "PI",
+      "era": "2000s",
+      "type": "product",
+      "derived_from": [
+        "OpenQM"
+      ]
+    },
+    {
+      "name": "URMA → mvON",
+      "description": "Coded from scratch; URMA was later named mvON and led to ONgroup's MVON.",
+      "branch": "PI",
+      "era": "2000s",
+      "type": "coded from scratch",
+      "leads_to": [
+        "MVON"
+      ]
+    },
+    {
+      "name": "Netbasic → MVON",
+      "company": "ProSolutions",
+      "description": "ProSolutions' Netbasic, coded from scratch and later named MVON.",
+      "branch": "PI",
+      "era": "2000s",
+      "type": "coded from scratch",
+      "leads_to": [
+        "MVON"
+      ]
+    },
+    {
+      "name": "MVON",
+      "company": "ONgroup",
+      "description": "ONgroup's MultiValue product, from mvON and ProSolutions' Netbasic → MVON.",
+      "branch": "PI",
+      "era": "2000s",
+      "type": "product",
+      "derived_from": [
+        "URMA → mvON",
+        "Netbasic → MVON"
+      ]
+    },
+    {
+      "name": "UPIX",
+      "company": "Alfa",
+      "description": "Alfa's PI-compatible product, coded from scratch.",
+      "branch": "PI",
+      "era": "1980s",
+      "type": "coded from scratch",
+      "derived_from": [
+        "Information"
+      ],
+      "leads_to": [
+        "uniVerse"
+      ]
+    },
+    {
+      "name": "uniVerse",
+      "company": "VMark → Ardent → Informix → IBM → Rocket",
+      "description": "VMark's uniVerse, a PI-style database; IP passed to Ardent, Informix, then IBM. Today UniVerse is a Rocket product.",
+      "branch": "PI",
+      "era": "1980s–today",
+      "type": "product",
+      "derived_from": [
+        "Information",
+        "UPIX"
+      ],
+      "leads_to": [
+        "FIRESTORM",
+        "pcVerse",
+        "Ardent",
+        "UniVerse"
+      ]
+    },
+    {
+      "name": "FIRESTORM",
+      "company": "Data General",
+      "description": "Data General product derived from VMark's uniVerse.",
+      "branch": "PI",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "uniVerse"
+      ]
+    },
+    {
+      "name": "pcVerse",
+      "company": "Profile",
+      "description": "Profile's PC product derived from uniVerse.",
+      "branch": "PI",
+      "era": "1990s",
+      "type": "product",
+      "derived_from": [
+        "uniVerse"
+      ]
+    },
+    {
+      "name": "Ardent",
+      "description": "Formed from VMark (and Unidata); owned uniVerse and UniData IP before Informix.",
+      "branch": "PI",
+      "era": "1990s",
+      "type": "company owning IP",
+      "derived_from": [
+        "uniVerse",
+        "UniData"
+      ],
+      "leads_to": [
+        "Informix"
+      ]
+    },
+    {
+      "name": "Informix",
+      "description": "Took over Ardent's uniVerse and UniData IP; passed to IBM.",
+      "branch": "PI",
+      "era": "2000s",
+      "type": "company owning IP",
+      "derived_from": [
+        "Ardent"
+      ],
+      "leads_to": [
+        "IBM"
+      ]
+    },
+    {
+      "name": "UniData",
+      "company": "Unidata → Pacific Unidata → IBM → Rocket",
+      "description": "Unidata's UniData, coded from scratch; IP passed through Pacific Unidata/Ardent/Informix to IBM. Today UniData is a Rocket product.",
+      "branch": "PI",
+      "era": "1980s–today",
+      "type": "coded from scratch",
+      "derived_from": [
+        "Information"
+      ],
+      "leads_to": [
+        "Pacific Unidata",
+        "IBM"
+      ]
+    },
+    {
+      "name": "Pacific Unidata",
+      "description": "Company that owned UniData IP before IBM.",
+      "branch": "PI",
+      "era": "1990s",
+      "type": "company owning IP",
+      "derived_from": [
+        "UniData"
+      ],
+      "leads_to": [
+        "IBM"
+      ]
+    },
+    {
+      "name": "Raining Data → TigerLogic",
+      "description": "Early-2000s vendor of D3 and mvBase, from Pick Systems/PickAX and General Automation.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "PickAX",
+        "General Automation (2000s)"
+      ],
+      "leads_to": [
+        "D3",
+        "mvBase"
+      ]
+    },
+    {
+      "name": "Temenos → jBASE Int'l / Mpower1",
+      "description": "Early-2000s vendor of jBASE.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "jBASE"
+      ],
+      "leads_to": [
+        "jBASE"
+      ]
+    },
+    {
+      "name": "Ladybridge (2000s)",
+      "description": "Early-2000s vendor of OpenQM.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "OpenQM"
+      ],
+      "leads_to": [
+        "OpenQM"
+      ]
+    },
+    {
+      "name": "Northgate Information Solutions",
+      "description": "Early-2000s vendor of REALITY, from the Microdata/McDonnell Douglas line.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "Reality 3.x … 5.x … 7.x … REALITY/X"
+      ],
+      "leads_to": [
+        "REALITY"
+      ]
+    },
+    {
+      "name": "Revelation",
+      "description": "Early-2000s vendor of OpenInsight, from Revelation/RevG/Arev.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "Arev"
+      ],
+      "leads_to": [
+        "OpenInsight"
+      ]
+    },
+    {
+      "name": "IBM",
+      "description": "Early-2000s vendor of UniData and UniVerse, from Informix and Pacific Unidata.",
+      "branch": "Vendors in early 2000s",
+      "era": "2000s",
+      "type": "vendor",
+      "derived_from": [
+        "Informix",
+        "Pacific Unidata"
+      ],
+      "leads_to": [
+        "UniData",
+        "UniVerse"
+      ]
+    },
+    {
+      "name": "D3 (Rocket)",
+      "company": "Rocket",
+      "description": "Current MultiValue database from Rocket, descended from Pick Systems' D3.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Raining Data → TigerLogic"
+      ]
+    },
+    {
+      "name": "mvBase",
+      "company": "Rocket",
+      "description": "Current MultiValue database from Rocket, descended from mv.BASE.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Raining Data → TigerLogic"
+      ]
+    },
+    {
+      "name": "jBASE (Zumasys)",
+      "company": "Zumasys",
+      "description": "Current MultiValue database from Zumasys, descended from jBASE.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Temenos → jBASE Int'l / Mpower1"
+      ]
+    },
+    {
+      "name": "OpenQM (Zumasys)",
+      "company": "Zumasys",
+      "description": "Current MultiValue database from Zumasys, descended from Ladybridge's OpenQM.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Ladybridge (2000s)"
+      ]
+    },
+    {
+      "name": "REALITY",
+      "company": "Northgate (NEC)",
+      "description": "Current MultiValue database from Northgate Public Services (an NEC company), descended from Microdata's Reality.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Northgate Information Solutions"
+      ]
+    },
+    {
+      "name": "OpenInsight",
+      "company": "Revelation Software",
+      "description": "Current MultiValue database from Revelation Software, descended from Revelation and Arev.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "Revelation"
+      ]
+    },
+    {
+      "name": "UniData (Rocket)",
+      "company": "Rocket",
+      "description": "Current MultiValue database from Rocket, descended from Unidata's UniData via IBM.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "IBM"
+      ]
+    },
+    {
+      "name": "UniVerse",
+      "company": "Rocket",
+      "description": "Current MultiValue database from Rocket, descended from VMark's uniVerse via IBM.",
+      "branch": "Current",
+      "era": "today",
+      "type": "current product",
+      "derived_from": [
+        "IBM"
+      ]
+    }
+  ]
+}

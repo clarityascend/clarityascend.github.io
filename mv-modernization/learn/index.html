@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn MultiValue — the simple guide</title>
+<meta name="description" content="MultiValue databases explained simply: fields, values, sub-values and your first query.">
+<link rel="icon" href="../../assets/img/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFBEF}
+a{color:#6B4E00}a:hover{color:#3D2C00}
+</style>
+<style>html{scroll-behavior:smooth}*{box-sizing:border-box}</style>
+</head>
+<body>
+<div style="background: #FFFBEF; color: #2A2620; font-family: Inter, system-ui, sans-serif; font-size: 18px; line-height: 1.65">
+
+<header style="border-bottom: 1px solid #EDE4CC; background: #FFFBEF">
+<nav style="max-width: 1120px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px">
+<svg width="36" height="36" viewBox="0 0 128 128" aria-hidden="true"><defs><clipPath id="lA"><path d="M28,54 A36,11 0 0 0 100,54 V75 A36,11 0 0 1 28,75 Z"></path></clipPath><clipPath id="lB"><path d="M28,75 A36,11 0 0 0 100,75 V97 A36,11 0 0 1 28,97 Z"></path></clipPath><clipPath id="lC"><path d="M28,32 V96 A36,11 0 0 0 100,96 V32 A36,11 0 0 0 28,32 Z"></path><ellipse cx="64" cy="32" rx="36" ry="11"></ellipse></clipPath></defs><rect width="128" height="128" rx="28" fill="#FFC61A"></rect><g clip-path="url(#lC)"><path d="M28,32 V96 A36,11 0 0 0 100,96 V32 A36,11 0 0 0 28,32 Z" fill="#1D1A14"></path><ellipse cx="64" cy="32" rx="36" ry="11" fill="#1D1A14"></ellipse><g clip-path="url(#lA)" fill="#FFC61A"><rect x="49.75" y="54" width="4.5" height="34"></rect><rect x="73.75" y="54" width="4.5" height="34"></rect></g><g clip-path="url(#lB)" fill="#FFC61A"><rect x="40.15" y="75" width="4.5" height="35"></rect><rect x="54.55" y="75" width="4.5" height="35"></rect><rect x="68.95" y="75" width="4.5" height="35"></rect><rect x="83.35" y="75" width="4.5" height="35"></rect></g><g fill="none" stroke="#FFC61A" stroke-width="4.5"><path d="M28,32 A36,11 0 0 0 100,32"></path><path d="M28,54 A36,11 0 0 0 100,54"></path><path d="M28,75 A36,11 0 0 0 100,75"></path></g></g></svg>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px">Learn MultiValue</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 15px">
+<a href="#basics" style="color: #4A4438; text-decoration: none">The basics</a>
+<a href="#words" style="color: #4A4438; text-decoration: none">Key words</a>
+<a href="#query" style="color: #4A4438; text-decoration: none">First query</a>
+<a href="../../" style="color: inherit; text-decoration: none; opacity: 0.85">Blog</a>
+<a href="../technical/" style="color: #4A4438; text-decoration: none">Technical edition</a>
+<a href="#start" style="background: #1D1A14; color: #FFFFFF; font-weight: 600; text-decoration: none; padding: 10px 18px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Start learning</a>
+</div>
+</nav>
+</header>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 88px 32px 72px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 500px; min-width: 0">
+<p style="margin: 0 0 16px; display: inline-block; background: #FFC61A; color: #1D1A14; font-weight: 600; font-size: 14px; padding: 4px 12px; border-radius: 999px">No experience needed</p>
+<h1 style="margin: 0 0 20px; font-family: 'Space Grotesk', sans-serif; font-size: 56px; line-height: 1.08; font-weight: 700; color: #1D1A14">MultiValue, explained simply.</h1>
+<p style="margin: 0 0 28px; font-size: 20px; color: #4A4438; max-width: 540px">Many banks, insurers, distributors and public bodies still run on MultiValue databases such as UniVerse and UniData. This guide shows how they work in plain words, and how modern tools make them easier to learn.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#basics" style="background: #1D1A14; color: #FFFFFF; font-weight: 600; text-decoration: none; padding: 14px 24px; border-radius: 999px">Read the 5-minute intro</a>
+<a href="#start" style="border: 2px solid #1D1A14; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 12px 22px; border-radius: 999px">Try it with sample data</a>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 20px; padding: 32px">
+<p style="margin: 0 0 16px; font-weight: 600; color: #6B5F48; font-size: 15px">One idea to remember</p>
+<p style="margin: 0 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; line-height: 1.25; color: #1D1A14">A field can hold a <span style="background: #FFC61A; padding: 0 6px; border-radius: 4px">list</span>, not just one value.</p>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 16px">
+<div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; min-width: 90px; color: #6B5F48">Name</span><span>[Customer name]</span></div>
+<div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; min-width: 90px; color: #6B5F48">Phones</span><span style="display: flex; flex-wrap: wrap; gap: 8px"><span style="background: #FFF3C4; padding: 2px 10px; border-radius: 6px">[Home]</span><span style="background: #FFF3C4; padding: 2px 10px; border-radius: 6px">[Mobile]</span><span style="background: #FFF3C4; padding: 2px 10px; border-radius: 6px">[Work]</span></span></div>
+<div style="display: flex; gap: 12px; align-items: baseline"><span style="font-weight: 600; min-width: 90px; color: #6B5F48">City</span><span>[City]</span></div>
+</div>
+<p style="margin: 20px 0 0; font-size: 15px; color: #6B5F48">In a classic SQL database, those three phones would usually need a second table.</p>
+</div>
+</section>
+
+<section id="basics" style="background: #FFFFFF; border-top: 1px solid #EDE4CC; border-bottom: 1px solid #EDE4CC">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #1D1A14">Fields, values and sub-values</h2>
+<p style="margin: 0 0 48px; max-width: 720px; color: #4A4438">A MultiValue record is like a set of nested boxes. Our logo shows it: one slice for a field, three for its values, five for the sub-values inside them.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 300px; background: #FFFBEF; border: 1px solid #EDE4CC; border-radius: 18px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #1D1A14; font-weight: 600">^</p>
+<h3 style="margin: 0 0 8px; font-size: 22px; color: #1D1A14">Field</h3>
+<p style="margin: 0; color: #4A4438">One piece of information, like a column. Also called an <em>attribute</em>. Separated by a field mark (@FM).</p>
+</div>
+<div style="flex: 1 1 300px; background: #FFFBEF; border: 1px solid #EDE4CC; border-radius: 18px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #1D1A14; font-weight: 600">]</p>
+<h3 style="margin: 0 0 8px; font-size: 22px; color: #1D1A14">Value</h3>
+<p style="margin: 0; color: #4A4438">One item in a field's list, like each phone number. Separated by a value mark (@VM).</p>
+</div>
+<div style="flex: 1 1 300px; background: #FFFBEF; border: 1px solid #EDE4CC; border-radius: 18px; padding: 28px">
+<p style="margin: 0 0 12px; font-family: 'JetBrains Mono', monospace; font-size: 30px; color: #1D1A14; font-weight: 600">\</p>
+<h3 style="margin: 0 0 8px; font-size: 22px; color: #1D1A14">Sub-value</h3>
+<p style="margin: 0; color: #4A4438">A list inside a value, like extensions for one work number. Separated by a sub-value mark (@SM).</p>
+</div>
+</div>
+<div style="margin-top: 32px; background: #1D1A14; color: #F3EEE2; border-radius: 14px; padding: 22px 26px; font-family: 'JetBrains Mono', monospace; font-size: 16px; overflow-x: auto; white-space: pre">[Name]<span style="color: #FFC61A">^</span>[Home]<span style="color: #FFC61A">]</span>[Mobile]<span style="color: #FFC61A">]</span>[Work]<span style="color: #FFC61A">^</span>[City]</div>
+<p style="margin: 12px 0 0; font-size: 15px; color: #6B5F48">How the record above looks when typed in MVBU, using ^ ] \ for the three marks.</p>
+</div>
+</section>
+
+<section id="words" style="max-width: 1120px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0 0 40px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #1D1A14">Eight words you'll hear on day one</h2>
+<dl style="margin: 0; display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">File</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">A collection of records, roughly a table.</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">Record &amp; key</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">One entry in a file, found by its unique key (the record ID).</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">Dictionary</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">Describes a file's fields: names, positions, formats.</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">TCL / ECL</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">The command line of UniVerse (TCL) and UniData (ECL).</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">LIST &amp; SORT</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">English-like query commands that print reports.</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">Select list</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">A saved list of record keys that the next command works on.</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">BASIC program</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">The business logic, written in MultiValue BASIC.</dd></div>
+<div style="flex: 1 1 240px; background: #FFFFFF; border: 1px solid #EDE4CC; border-radius: 14px; padding: 22px"><dt style="font-weight: 600; color: #1D1A14; margin-bottom: 6px">Subroutine</dt><dd style="margin: 0; color: #4A4438; font-size: 16px">A reusable BASIC program others CALL, often acting as an API.</dd></div>
+</dl>
+</section>
+
+<section id="query" style="background: #FFFFFF; border-top: 1px solid #EDE4CC; border-bottom: 1px solid #EDE4CC">
+<div style="max-width: 1120px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #1D1A14">Your first query, word by word</h2>
+<p style="margin: 0 0 36px; color: #4A4438; max-width: 680px">MultiValue queries read almost like English. Here is one that lists London customers by name.</p>
+<div style="background: #1D1A14; color: #F3EEE2; border-radius: 14px; padding: 26px 28px; font-family: 'JetBrains Mono', monospace; font-size: 20px; overflow-x: auto; white-space: pre"><span style="color: #FFC61A">LIST</span> <span style="color: #8FB8FF">CUSTOMERS</span> <span style="color: #F2A6C8">WITH CITY = "London"</span> <span style="color: #9BE0B8">NAME BALANCE</span></div>
+<div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 220px; border-top: 4px solid #FFC61A; padding-top: 14px"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-weight: 600">LIST</p><p style="margin: 0; font-size: 16px; color: #4A4438">Show a report.</p></div>
+<div style="flex: 1 1 220px; border-top: 4px solid #8FB8FF; padding-top: 14px"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-weight: 600">CUSTOMERS</p><p style="margin: 0; font-size: 16px; color: #4A4438">From this file.</p></div>
+<div style="flex: 1 1 220px; border-top: 4px solid #F2A6C8; padding-top: 14px"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-weight: 600">WITH …</p><p style="margin: 0; font-size: 16px; color: #4A4438">Only records that match.</p></div>
+<div style="flex: 1 1 220px; border-top: 4px solid #9BE0B8; padding-top: 14px"><p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-weight: 600">NAME BALANCE</p><p style="margin: 0; font-size: 16px; color: #4A4438">The fields to show, named in the dictionary.</p></div>
+</div>
+<p style="margin: 28px 0 0; font-size: 16px; color: #6B5F48">File and field names here are examples; your system's names will differ.</p>
+</div>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 88px 32px">
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; color: #1D1A14">Why "modernize"?</h2>
+<p style="margin: 0 0 40px; color: #4A4438; max-width: 720px">The database is usually fine. What gets old is the way people reach it: small terminal windows and code few people remember writing. Modernizing means better windows and better maps, not starting over.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<article id="start" style="flex: 1 1 440px; min-width: 0; background: #FFF3C4; border-radius: 22px; padding: 36px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; color: #6B4E00">MVBU · CHROME, EDGE &amp; VS CODE</p>
+<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; color: #1D1A14">See the data in a friendly view</h3>
+<p style="margin: 0 0 20px; color: #3D3628">MVBU's Analyst view lets you look up a record, find records step by step and see what's in a file, all in plain language. It only reads; it never changes your data.</p>
+<ul style="margin: 0 0 24px; padding-left: 20px; color: #3D3628">
+<li>No server yet? Turn on sample data and practise safely.</li>
+<li>Every result is saved as a readable Markdown note.</li>
+<li>A built-in setup guide walks you through installation.</li>
+</ul>
+<a href="https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa" style="display: inline-block; background: #1D1A14; color: #FFFFFF; font-weight: 600; text-decoration: none; padding: 13px 22px; border-radius: 999px">Add MVBU to Chrome</a>
+</article>
+<article style="flex: 1 1 440px; min-width: 0; background: #E3ECFF; border-radius: 22px; padding: 36px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; color: #1E3A7A">MVBA · VS CODE</p>
+<h3 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; color: #1D1A14">Read the code with a map</h3>
+<p style="margin: 0 0 24px; color: #2A3550">Generate documentation reports for Rocket UniVerse BASIC programs, including the internal call tree with Mermaid or Markmap diagrams, file usage, metrics and warnings.</p>
+<a href="https://marketplace.visualstudio.com/items?itemName=LXie.multivalue-basic-analyser" style="display: inline-block; background: #1E3A7A; color: #FFFFFF; font-weight: 600; text-decoration: none; padding: 13px 22px; border-radius: 999px">Get MVBA for VS Code</a>
+</article>
+</div>
+</section>
+
+<section style="background: #1D1A14; color: #F3EEE2">
+<div style="max-width: 1120px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
+<div style="flex: 1 1 520px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; color: #FFFFFF">Ready for the deep end?</h2>
+<p style="margin: 0; color: #CFC8B8">The technical edition covers architecture, API calls, dynamic arrays and production safeguards.</p>
+</div>
+<a href="../technical/" style="background: #FFC61A; color: #1D1A14; font-weight: 600; text-decoration: none; padding: 14px 24px; border-radius: 999px">Go to the technical edition</a>
+</div>
+<div style="border-top: 1px solid #3A362C">
+<div style="max-width: 1120px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; color: #B5AE9F; font-size: 14px">
+<span>© 2026 Clarity Ascend · MVBU and MVBA</span>
+<span>UniVerse and UniData are products of Rocket Software.</span>
+</div>
+</div>
+</section>
+
+</div>
+</body>
+</html>
