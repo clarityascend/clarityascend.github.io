@@ -24,7 +24,7 @@ Two ways into MultiValue modernization: pick the one that fits you.
 ## The tools
 
 **MVBU: MultiValue Basic Utility.** A Chrome, Edge and VS Code extension that shows UniVerse and UniData command output, API (catalogued subroutine) results and file schema at full width. It only reads data and never edits records.
-[Add MVBU to Chrome](https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa)
+[More about MVBU]({{ '/mvbu/' | relative_url }}) · [Add MVBU to Chrome](https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa)
 
 **MVBA: MultiValue Basic Analyser.** A VS Code extension that generate documentation reports for Rocket UniVerse BASIC programs, including the internal call tree with Mermaid or Markmap diagrams, file usage, metrics and warnings.
-[Get MVBA from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=LXie.multivalue-basic-analyser)
+[More about MVBA]({{ '/mvba/' | relative_url }}) · [Get MVBA from the VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=LXie.multivalue-basic-analyser)

@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 lang: en
 # e.g. Europe/London, Asia/Shanghai — leave empty for UTC
-timezone:Asia/Melbourne
+timezone: Australia/Melbourne
 
 title: MultiValue Modernization
 tagline: UniVerse, UniData and the tools around them
