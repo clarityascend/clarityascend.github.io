@@ -28,6 +28,9 @@ social:
   links:
     - https://github.com/clarityascend
 
+# Discord invite, shown in the footer and the sidebar
+discord_url: "https://discord.gg/xxhAD77RVx"
+
 avatar: /assets/img/avatar.png
 social_preview_image: /assets/img/avatar.png
 
