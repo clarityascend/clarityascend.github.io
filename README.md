@@ -6,6 +6,7 @@ A [Jekyll](https://jekyllrb.com) site using the [Chirpy](https://github.com/cote
 
 | Path | What it is |
 |---|---|
+| `index.html` | The home page. It must stay `index.html` (not `.md`), or the post list breaks |
 | `_config.yml` | Site title, URL, GitHub user name, theme settings |
 | `_posts/` | Blog posts, named `YYYY-MM-DD-title.md` |
 | `_tabs/` | Sidebar pages: Modernization, Categories, Tags, Archives, About |
@@ -56,3 +57,13 @@ tags: [universe]
 
 Post text in Markdown.
 ```
+
+## SEO
+
+The theme adds page titles, descriptions, canonical links, Open Graph and Twitter tags, structured data, `sitemap.xml`, `robots.txt` and an Atom feed.
+
+- Give every post a `description` in its front matter, in 150 to 160 characters. It is used in search results, in link previews and on the home page.
+- `assets/img/social-preview.png` (1200 x 630) is the image shown when a page is shared. A post can use its own with `image: { path: /assets/img/x.png, alt: "..." }`.
+- `assets/img/favicons/` holds the site icons.
+- The two pages under `mv-modernization/` are plain HTML, so their SEO tags are written in each file's `<head>`. Update the title, description and addresses there if a page changes.
+- To verify the site with Google Search Console or Bing Webmaster Tools, choose the "HTML tag" method, paste the code into `webmaster_verifications` in `_config.yml`, push, then submit `https://clarityascend.github.io/sitemap.xml`.

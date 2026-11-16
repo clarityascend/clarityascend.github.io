@@ -1,5 +1,6 @@
 ---
 title: MVBU
+description: "MVBU (MultiValue Basic Utility) is a Chrome, Edge and VS Code extension for viewing Rocket UniVerse and UniData records, commands, API calls and file schema."
 icon: fas fa-table-list
 order: 2
 ---
@@ -12,7 +13,7 @@ MVBU views data. It does not edit records.
 [Get it for VS Code](https://marketplace.visualstudio.com/items?itemName=ClarityAscend.mvbu2){: .btn .btn-outline-primary }
 [Website](https://clarityascend.com/MVBU){: .btn .btn-outline-primary }
 
-![MVBU Analyst view: finding records with a step-by-step search](/assets/img/mvbu/screenshot-analyst.png)
+![MVBU Analyst view: finding records with a step-by-step search](/assets/img/mvbu/screenshot-analyst.png){: w="1280" h="1223" }
 _The Analyst view_
 
 ## Features
@@ -37,7 +38,7 @@ _The Analyst view_
 
 ## Developer console
 
-![MVBU Developer console](/assets/img/mvbu/screenshot-console.png)
+![MVBU Developer console](/assets/img/mvbu/screenshot-console.png){: w="1600" h="950" }
 _The Developer console_
 
 - **Commands**: TCL/ECL at `TERM 132,999`, one command per line, with history and favourites. Select lists are kept between commands.
@@ -78,3 +79,23 @@ To explore without a server, turn on sample data (mock mode).
 [Report an issue](https://github.com/clarityascend/mvbu/issues) with the MVBU version and the lines from the MVBU log.
 
 UniVerse and UniData are products of Rocket Software.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MultiValue Basic Utility (MVBU)",
+  "alternateName": "MVBU",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "MVBU (MultiValue Basic Utility) is a Chrome, Edge and VS Code extension for viewing Rocket UniVerse and UniData records, commands, API calls and file schema.",
+  "url": "https://clarityascend.github.io/mvbu/",
+  "image": "https://clarityascend.github.io/assets/img/mvbu/screenshot-analyst.png",
+  "installUrl": "https://chromewebstore.google.com/detail/heepofiejichbhogampmkghinpgjilpa",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clarity Ascend",
+    "url": "https://clarityascend.com/MVBU"
+  }
+}
+</script>

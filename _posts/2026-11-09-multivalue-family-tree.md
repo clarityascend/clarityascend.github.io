@@ -1,5 +1,6 @@
 ---
 title: "The MultiValue family tree, 1965 to today"
+description: "A visual history of MultiValue (Pick) databases, from TRW's GIRLS in 1965 to today's D3, mvBase, jBASE, OpenQM, REALITY, OpenInsight, UniData and UniVerse."
 date: 2026-11-09 12:00:00 +0000
 categories: [MultiValue, History]
 tags: [history, pick, reality, universe, unidata]

@@ -1,5 +1,6 @@
 ---
 title: "Modernize MultiValue without rewriting it"
+description: "How to modernize Rocket UniVerse and UniData systems in four steps without a rewrite, using MVBU to see the data and MVBA to understand the BASIC code."
 date: 2026-11-09 09:00:00 +0000
 categories: [MultiValue, Modernization]
 tags: [universe, unidata, mvbu, mvba]

@@ -1,5 +1,6 @@
 ---
 icon: fas fa-info-circle
+description: "About the MultiValue Modernization blog and its tools for Rocket UniVerse and UniData, MVBU and MVBA, from Clarity Ascend."
 order: 7
 ---
 

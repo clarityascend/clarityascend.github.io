@@ -1,5 +1,6 @@
 ---
 title: MVBA
+description: "MVBA (MultiValue Basic Analyser) is a free VS Code extension that documents Rocket UniVerse BASIC programs: call tree diagrams, file usage, metrics and warnings."
 icon: fas fa-diagram-project
 order: 3
 ---
@@ -49,3 +50,27 @@ Before changing a program that has run for decades, a team needs to know what it
 See also [MVBU]({{ '/mvbu/' | relative_url }}), for looking at the data those programs work on.
 
 UniVerse is a product of Rocket Software.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MultiValue Basic Analyser (MVBA)",
+  "alternateName": "MVBA",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "MVBA (MultiValue Basic Analyser) is a free VS Code extension that documents Rocket UniVerse BASIC programs: call tree diagrams, file usage, metrics and warnings.",
+  "url": "https://clarityascend.github.io/mvba/",
+  "installUrl": "https://marketplace.visualstudio.com/items?itemName=LXie.multivalue-basic-analyser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Clarity Ascend",
+    "url": "https://clarityascend.com/MVBU"
+  }
+}
+</script>

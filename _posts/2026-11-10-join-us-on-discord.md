@@ -1,5 +1,6 @@
 ---
 title: "Join the MultiValue Modernization Discord"
+description: "Join the Discord server for MultiValue developers and analysts: help with MVBU and MVBA, modernization ideas, and questions about UniVerse and UniData."
 date: 2026-11-10 09:00:00 +1100
 categories: [Community]
 tags: [discord, community, mvbu, mvba]

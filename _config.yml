@@ -10,8 +10,8 @@ timezone: Australia/Melbourne
 title: MultiValue Modernization
 tagline: UniVerse, UniData and the tools around them
 description: >-
-  Notes, guides and tools for modernizing MultiValue systems:
-  MVBU (MultiValue Basic Utility) and MVBA (MultiValue Basic Analyser).
+  Guides, history and tools for modernizing MultiValue (Pick) databases
+  such as Rocket UniVerse and UniData: MVBU for Chrome and VS Code, and MVBA.
 
 url: "https://clarityascend.github.io"
 baseurl: ""
@@ -27,12 +27,20 @@ social:
   email: # optional, shown publicly
   links:
     - https://github.com/clarityascend
+    - https://clarityascend.com/MVBU
+    - https://discord.gg/xxhAD77RVx
+
+# Search engine verification codes (see README, "SEO")
+webmaster_verifications:
+  google: # code from Google Search Console
+  bing: # code from Bing Webmaster Tools
 
 # Discord invite, shown in the footer and the sidebar
 discord_url: "https://discord.gg/xxhAD77RVx"
 
 avatar: /assets/img/avatar.png
-social_preview_image: /assets/img/avatar.png
+# 1200 x 630 image shown when a page is shared
+social_preview_image: /assets/img/social-preview.png
 
 theme_mode: # [light | dark] — empty follows the visitor's system
 toc: true
